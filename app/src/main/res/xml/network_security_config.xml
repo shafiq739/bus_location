@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <base-config>
+        <trust-anchors>
+            <!-- Use system trusted CAs -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Optional: allow cleartext (HTTP) for specific domains -->
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">prodhan.top</domain>
+    </domain-config>
+
+
+
+
+</network-security-config>
